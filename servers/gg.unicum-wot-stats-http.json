@@ -1,0 +1,50 @@
+{
+  "$schema": "../schemas/server-definition.schema.json",
+  "id": "gg.unicum-wot-stats-http",
+  "name": "unicum.gg World of Tanks Stats",
+  "alias": "unicum",
+  "description": "Look up World of Tanks statistics on the EU, NA and Asia servers: player ratings (WN8, WNX, win rate) and per-tank records, clans with their members, Stronghold and Clan Wars, tank specifications and mark thresholds, maps, server population and tournaments. Read-only, no API key.",
+  "logo": "https://avatars.githubusercontent.com/u/288648413?v=4",
+  "schema_version": "2.1",
+  "categories": [
+    "search"
+  ],
+  "tags": [
+    "world-of-tanks",
+    "wot",
+    "gaming",
+    "stats",
+    "wn8",
+    "leaderboards",
+    "clans"
+  ],
+  "transport": {
+    "type": "http",
+    "url": "https://unicum.gg/api/mcp",
+    "metadata": {
+      "inputs": []
+    }
+  },
+  "auth": {
+    "type": "none"
+  },
+  "contributor": {
+    "name": "unicum.gg",
+    "github": "unicum-gg",
+    "url": "https://unicum.gg"
+  },
+  "links": {
+    "repository": "https://github.com/unicum-gg/unicum.gg",
+    "homepage": "https://unicum.gg",
+    "documentation": "https://unicum.gg/docs"
+  },
+  "platforms": [
+    "all"
+  ],
+  "capabilities": {
+    "tools": true,
+    "resources": false,
+    "prompts": false,
+    "read_only_mode": true
+  }
+}
